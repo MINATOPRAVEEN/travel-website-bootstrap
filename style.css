@@ -1,0 +1,179 @@
+/* universal */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav-link{
+    /* transition:all 0.2s; */
+    position:relative;
+}
+.nav-link:hover{
+    /* text-decoration:underline; */
+    /* border-bottom:2px solid skyblue; */
+}
+.nav-link:after{
+    opacity:0;
+     transition:all 0.2s;
+     height:2px;
+     width:100%;
+     color:skyblue;
+     background-color:skyblue;
+     position:absolute;
+     bottom:0;
+     left:0;
+     content:"";
+}
+.nav-link:hover:after{  
+    opacity:1;
+}
+.main-text{
+    min-height: 10vh;
+}
+.main-img{
+background-image: url("./background-image.webp");
+ background-size:100% ;
+    background-repeat: no-repeat;
+    width:100%;
+    /* background-size:; */
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+    position: relative;
+}
+.silder-div{
+    width: 100%;
+    min-height: 90vh;
+    overflow-x: hidden
+}
+.change-div{
+    width: 300px;
+    /* background-color: aqua; */
+    height:400px;
+}
+.zoom{
+    /* height:400px; */
+    overflow: hidden;
+    border-radius:8px;
+    position: relative;
+    transition: .6s ease-out;
+}
+.zoom img{
+    object-fit: cover;
+    transition:  transfrom 0.8s;
+    /* height: 100%; */
+}
+
+.card-body{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.zoom:hover img{
+    -ms-transform: scale(0.9);
+    -webkit-animation: scale(0.9);
+    transition:all 0.2s;
+    transform: scale(0.9);
+}
+.about-div{
+    overflow-x:hidden;
+}
+.customer{
+    min-width:100%;
+    min-height:60vh;
+    background-image:linear-gradient( to right, rgba(69, 69, 255, 0.839),rgba(236, 102, 250, 0.719));
+    overflow-x: hidden;
+}
+.cus-img > img{
+    width: 100px;
+    height: 100px;
+}
+.service{
+    overflow-x: hidden;
+}
+.icons-tab{
+    min-height: 50vh;
+    overflow-x: hidden;
+}
+.hover{
+    width: 100%;
+    min-height:10vh;
+    background-image:linear-gradient( to right, rgba(255, 209, 69, 0.839),rgba(250, 102, 102, 0.719));
+    overflow-x: hidden;
+}
+.footer img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.footer{
+    overflow-x: hidden;
+}
+/* index-two */
+.index2-container-one{
+    width: 100%;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-image:url(./event-1.jpg);
+    /* object-fit: contain; */
+}
+.event{
+    position: absolute;
+}
+.event h1{
+    font-size:100px;
+    /* font-display:inherit; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+.index3-container-one{
+    width: 100%;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-image:url(./volcano.jpeg);
+}
+.index4-container-one{
+    width: 100%;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-image:url(./blog-2.jpg);
+}
+.blog-section-one{
+    width: 100%;
+    overflow-x: hidden;
+}
+.blog-content{
+    overflow-x: hidden;
+}
+.index5-container-one{
+    width: 100%;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-image:url(./contact.jpg);
+}
+.frame{
+    overflow-x:hidden;
+}
+.signup{
+    width: 100%;
+    background-position: center;
+    min-height: 90vh;
+    position: relative;
+    background-size: cover;
+    background-image:url(./signup-png.webp);
+}
+.log-up{
+   /* width: 400px; */
+    background: transparent;
+    background-color: rgba(118, 116, 116, 0.595);
+}
